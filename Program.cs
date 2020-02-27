@@ -58,6 +58,10 @@ namespace MethodsDanielWidell
             {
                 Console.WriteLine("The division of " + inputA + " by " + inputB + " is: " + OperationsViaCase(inputA, inputB, flag));
             }
+            else
+            {
+                Console.WriteLine("Please enter a valid number between 1 and 4.");
+            }
             }
         }
     }
