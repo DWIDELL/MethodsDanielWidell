@@ -42,6 +42,7 @@ namespace MethodsDanielWidell
                 Console.WriteLine("Select desired operation: \n 1. Add 2. Subtract 3. Multiply 4. Divide");
 
                 flag = Convert.ToInt32(Console.ReadLine());
+
             if (flag == 1)
             {
                 Console.WriteLine("The sum of " + inputA + " and " + inputB + " is: " + OperationsViaCase(inputA, inputB, flag));
@@ -58,10 +59,15 @@ namespace MethodsDanielWidell
             {
                 Console.WriteLine("The division of " + inputA + " by " + inputB + " is: " + OperationsViaCase(inputA, inputB, flag));
             }
-            else
+            if (flag <= 0)
             {
                 Console.WriteLine("Please enter a valid number between 1 and 4.");
             }
+            if (flag >= 5)
+            {
+                Console.WriteLine("Please enter a valid number between 1 and 4.");
+            }
+            
             }
         }
     }
